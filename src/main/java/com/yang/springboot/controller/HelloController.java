@@ -11,12 +11,12 @@ import java.util.Map;
 public class HelloController {
 
     //设置默认访问页面的第一种方法
+//    @RequestMapping({"/","index.html"})
+//        public String index(){
 //        return "index";
 //    }
 
     //第二种方法写在MyMvcConfig 类中
-//    @RequestMapping({"/","index.html"})
-//    public String index(){
     @RequestMapping("/hello")
     @ResponseBody
     public String hello() {
